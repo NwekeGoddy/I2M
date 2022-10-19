@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,30 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="./assets/logos/i2m logos/i2m_logo.png">
 </head>
+
 <body>
     <section class="intro">
         <div class="overlay"></div>
         <div>
             <img src="./assets/logos/i2m logos/i2m_cable_logo.png" alt="i2m logo" srcset="">
-            <h3>Connecting the two economic centers of Lagos.</h3>  
+            <h3>Connecting the two economic centers of Lagos.</h3>
         </div>
         <div class="countdown">
             <p id="demo"></p>
         </div>
     </section>
 
-    <section class = "space">
+    <section class="space">
     </section>
 
- 
+
     <section class="about">
-        <!-- <div class="overlay"></div> -->
         <div class="routes_plans">
             <div class="overlay"></div>
             <div class="routes">
@@ -58,7 +61,9 @@
 
             <div>
                 <h5>What?</h5>
-                <p>This is a 96-core cable infrastructure buried at over 1.2m depth traversing Oregun, Ogudu, 3rd Mainland Bridge, Ikoyi and landing in Victoria Island. Cable length is 36km and joint spans are averagely 4.8km apart.  </p>
+                <p>This is a 96-core cable infrastructure buried at over 1.2m depth traversing Oregun, Ogudu, 3rd
+                    Mainland Bridge, Ikoyi and landing in Victoria Island. Cable length is 36km and joint spans are
+                    averagely 4.8km apart. </p>
             </div>
 
             <div>
@@ -70,7 +75,7 @@
             <div>
                 <h5>WHEN?</h5>
                 <p>It would be ready for service at October 2022.</p>
-                <p>Additional phrases would be added later. An extension on Ikorodu Road & Eko Bridge towards Marina.
+                <p>Additional phases would be added later. An extension on Ikorodu Road & Eko Bridge towards Marina.
                 <p>Another extension towards OADC, MDXi and WACSl.</p>
             </div>
         </div>
@@ -88,41 +93,43 @@
                 <img class="logo8" src="assets/logos/partners logo/inq-logo-01.png" alt="inq logo">
                 <img class="logo9" src="assets/logos/partners logo/ntel-logo.png" alt="ntel logo">
                 <img class="logo10" src="assets/logos/partners logo/icsl-removebg-preview.png" alt="ICSL logo">
-                <img class="logo11" src="assets/logos/partners logo/standard-chartered logo.png" alt="standard chatered logo">
+                <img class="logo11" src="assets/logos/partners logo/standard-chartered logo.png"
+                    alt="standard chatered logo">
                 <img class="logo12" src="assets/logos/partners logo/download.png" alt="credit wallet logo">
             </div>
         </div>
     </section>
-</body> 
+</body>
 
 <script>
     // Set the date we're counting down to
     var countDownDate = new Date("Oct 31, 2022 15:00:00").getTime();
-    
+
     // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-    
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-    
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-    
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
     }, 1000);
-    </script>                               
-</html>                
+</script>
+
+</html>
