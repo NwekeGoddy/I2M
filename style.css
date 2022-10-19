@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* INTRO SECTION */
+section.intro{
+    background-image: url("/assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 50px 0px 0px 50px;
+}
+
+.intro div{
+    width: 50%;
+    
+}
+
+.intro h3{
+    font-size: 50px;
+    color: white;
+}
+
+section.space{
+    height: 10px;
+    background: rgb(18,36,0);
+    background: linear-gradient(90deg, rgba(18,36,0,1) 0%, rgba(21,121,9,1) 35%, rgba(0,255,132,1) 100%);
+}
+
+div.countdown{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #ffffff;
+
+    padding: 10px 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.9s cubic-bezier(.25,.8,.25,1);
+    width: min-content;
+}
+
+div.countdown p{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* INTRO MEDIA QUERIES */
+
+@media only screen and (max-width: 1068px) {
+    section.intro{
+        padding: 20px 0px 0px 20px;
+    }
+
+    .intro div{
+        width: 70%;
+    }
+
+    .intro h3{
+        font-size: 40px;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+
+    section.intro{
+        padding: 70px 0px 0px 20px;
+    }
+    .intro div{
+        width: 70%;
+    }
+    .intro img{
+        height: 80px;
+    }
+
+    .intro h3{
+        font-size: 25px;
+        color: white;
+    }
+}
+
+
+/* ABOUT SECTION */
+section.about{
+    display: grid;
+    grid-template-areas: "routes_plans routes_plans"
+                         "what what"
+                         "customers customers";
+    grid-gap: 10px;
+    
+}
+
+section .routes_plans{
+    grid-area: routes_plans;
+    height: 500px;
+    background-image: url("/assets/images/4.jpg");
+    background-size: cover;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+section .routes{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    width: 500px;
+    padding: 45px;
+    background-color: #0000006c;
+} 
+
+section .routes h4{
+    color:#ffcc2a;
+    font-size: 35px;
+    font-weight: 800;
+   
+} 
+
+section .routes ul{
+   list-style-type: disc;
+   
+} 
+
+/* ROUTES MEDIA QUERIES */
+
+@media only screen and (max-width: 1068px) {
+    section .routes_plans{
+        flex-direction: column;
+        height: fit-content;
+    }
+}
+
+
+section .plans{
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    width: 500px;
+    padding: 15px;
+}
+
+section .plans li{   
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+   
+    section .routes{
+        width: 100vw;
+        word-wrap: break-word;
+    }
+
+    section .routes h4 {
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    section .routes ul li {
+        font-size: 19px;
+    
+    }
+
+    section .plans {
+        font-size: 19px;
+        padding: 45px;
+        width: 100vw;
+    }
+
+   
+
+}
+
+section .what{
+    grid-area: what;
+}
+
+
+.what{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0px;
+}
+
+.what div{
+    width: 30%;
+    text-align: center;
+    padding: 15px;  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.what div:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.what div h5{
+    color:#ffcc2a;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.what div p{
+    color:#050400a6;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+    .what{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .what div{
+        width: 80%; 
+    }
+
+    .what div h5{
+        font-size: 25px;
+        font-weight: 800;
+    }
+    
+    .what div p{  
+        font-size: 19px;
+        font-weight: 600;
+    }
+}
+
+
+section .customers{
+    grid-area: customers;
+    margin-bottom: 30px;
+}
+
+.customers h3{
+    color:#ffcc2a;
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.customers div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width:60%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers div img{
+    margin: auto;
+    height: 50px;  
+} 
+
+@media only screen and (max-width: 600px) {
+    .customers div{
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+
+    .customers div img{
+        margin: auto;
+        height: 30px;  
+    } 
+
+    .customers h3{
+        font-size: 25px;
+    }
+ 
+
+}
