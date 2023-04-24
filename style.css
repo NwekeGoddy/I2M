@@ -53,6 +53,19 @@ div.countdown p {
     font-weight: 900;
 }
 
+div.live{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+ 
+}
+
+div.live p {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+}
+
 /* INTRO MEDIA QUERIES */
 
 @media only screen and (max-width: 1068px) {
@@ -60,6 +73,11 @@ div.countdown p {
     .intro h3 {
         font-size: 40px;
         color: white;
+    }
+
+    div.live p {
+        font-size: 30px;
+       
     }
 }
 
@@ -282,5 +300,10 @@ section .customers {
 
     .customers h3 {
         font-size: 25px;
+    }
+
+    div.live p {
+        font-size: 20px;
+       
     }
 }
